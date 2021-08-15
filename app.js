@@ -13,17 +13,19 @@ function getData(param){
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${param}`)
         .then(data => data.json())
         .then(data => {
+            let item = '';
             if (param === ''){
                 return;
             }
             if(data.meals){
                 data.meals.forEach(element => {
-                html.innerHTML += `
+                item += `
                     <div class="meal-item">
                         <div class="meal-img"><img src="${element.strMealThumb}" width="130px" alt=""></div>
                         <div class="meal-name">${element.strMeal}</div>
                     </div>` 
                 });
-            }
-        })
+            } 
+            html.innerHTML = item;
+        }) 
 }
