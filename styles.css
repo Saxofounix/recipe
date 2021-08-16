@@ -1,12 +1,17 @@
 *{
     box-sizing: border-box;
 }
+
+.lookup-wrapper > h2, p{
+    text-align: center;
+}
 .lookup-wrapper{
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    flex-direction: column;
 }
 input,button{
     width: 30vw;
@@ -17,14 +22,14 @@ input,button{
 }
 .lookup > button{
     width: 5vw;
-    border: 1px solid yellow;
-    background-color: rgb(236, 236, 162);
-    color: rgb(0, 0, 0);
+    border: 1px solid rgb(88, 88, 228);
+    background: white;
     cursor: pointer;
+    color: rgb(88, 88, 228);
 }
 .lookup > input{
-    border: 1px solid rgb(226, 70, 104);
-    background-color: rgb(238, 144, 144);
+    border: 2px solid rgb(88, 88, 228);
+    background: white;
     color: rgb(0, 0, 0);
 }
 .meal-wrapper{
@@ -37,9 +42,15 @@ input,button{
     background: rgb(88, 88, 228);
     padding: 1rem;
     margin: 2rem 0;
+    width: 25vw;
+    border-radius: 1rem;
 }
 .meal-img img{
-    width: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 1rem;
 }
 .meal-name{
     text-align: center;
@@ -49,23 +60,48 @@ input,button{
 }
 .btn{
     width: 100%;
-    margin-top: 0.25rem;
+    margin-top: 1em;
+    background: white;
+    border: 1px solid white;
 }
 .recipe-wrapper{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: orange;
+    background: rgba(80, 87, 192, 0.95);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-height: 70vh;
+    width: 50vw;
+    overflow-y: auto;
 }
 
-.close-btn{
+.recipe{
+    text-align: left;
+    padding: 0.5rem;
+}
+.recipe-header{
+    margin-left: 0.5rem;
+    font-size: large;
+}
+#link{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: rgb(0, 0, 0);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.close-btn i{
     position: absolute;
-    height: 33px;
-    width: 33px;
-    background: red;
     right: 0;
     cursor: pointer;
+    margin: 1rem;
+    font-size: 2rem;
 }
 
 .clear{

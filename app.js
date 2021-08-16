@@ -50,6 +50,7 @@ function getData(param){
         .then(data => {
             let item = '';
             if (param === ''){
+                html.innerHTML = 'No meals found, your query is empty'
                 return;
             }
             if(data.meals){
@@ -61,7 +62,9 @@ function getData(param){
                         <div class="meal-name">${element.strMeal}</div>
                     </div>` 
                 });
-            } 
+            } else{
+                item = 'No meals found'
+            }
             html.innerHTML = item;
             const btn = document.querySelectorAll('.btn')
             getMealRecipe(btn);

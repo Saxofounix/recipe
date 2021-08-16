@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="./app.js" defer></script>
     <title>Document</title>
@@ -13,10 +14,14 @@
 <body>
     <section>
         <div class="lookup-wrapper">
+            <div>
+                <h2>Find meals for your ingredients</h2>
+            </div>
             <div class="lookup">
                 <input type="text" id='search-value'>
                 <button class="search">Go!</button>
             </div>
+            <p>Search bar accepts one ingredient at a time (e.g. chicken breast, chilli)</p>
         </div>
     </section>
     <section>
@@ -26,11 +31,11 @@
     </section>
     <section>
         <div class="recipe-wrapper clear">
-            <div class="close-btn"></div>
+            <div class="close-btn"><i class="fa fa-close"></i></div>
             <h4 class="recipe-header"></h4>
+
             <p class="recipe"></p>
             <a href="" id="link" target="_blank">Watch Video Tutorial</a>
-
         </div>
     </section>
 </body>
