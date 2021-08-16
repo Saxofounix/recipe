@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 input,button{
     width: 30vw;
@@ -30,7 +31,7 @@ input,button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2rem 3rem;
+    margin: 0rem 3rem;
 }
 .meal-item{
     background: rgb(88, 88, 228);
@@ -45,4 +46,28 @@ input,button{
     margin: 1rem;
     font-size: 1rem;
     color: white;
+}
+.btn{
+    width: 100%;
+    margin-top: 0.25rem;
+}
+.recipe-wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+}
+
+.close-btn{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    background: red;
+    right: 0;
+    cursor: pointer;
+}
+
+.clear{
+    display: none;
 }
