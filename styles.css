@@ -107,3 +107,21 @@ input,button{
 .clear{
     display: none;
 }
+@media only screen and (max-width: 850px) {
+   .meal-item{
+       width: 35vw;
+       margin: 1rem 0.5rem;
+   }
+   input{
+       width: 50vw;
+   }
+   .lookup > button {
+       width: 10vw;
+   }
+}
+@media only screen and (max-width: 650px) {
+    .meal-item{
+        width: 60vw;
+        margin: 1rem 0.5rem;
+    }
+ }
